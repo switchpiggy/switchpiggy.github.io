@@ -3,99 +3,70 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alan</title>
-  <meta name="description" content="Alan — Mathematics @ Stanford. Optimization, ML, and control." />
-
-  <!-- Fonts: swap these out (or delete and use system fonts) if you want zero dependencies -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="style.css" />
+  <title>Alan Xiao</title>
+  <meta name="description" content="Alan Xiao — site under construction." />
+  <meta name="robots" content="noindex" />
+  <style>
+    :root {
+      --bg:     #fcfcfa;
+      --ink:    #1b1b1a;
+      --muted:  #6b6b66;
+      --accent: #3a4cc4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:     #15151a;
+        --ink:    #e9e9e6;
+        --muted:  #9a9a94;
+        --accent: #94a2ff;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      display: grid;
+      place-items: center;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      max-width: 480px;
+      padding: 24px;
+      text-align: center;
+    }
+    .pixel {
+      width: 28px;
+      height: 28px;
+      margin: 0 auto 20px;
+      display: block;
+      image-rendering: pixelated;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    p {
+      margin: 0;
+      color: var(--muted);
+    }
+  </style>
 </head>
-
 <body>
   <main>
-    <!-- ===== Intro ===== -->
-    <h1 class="name">Alan Xiao</h1>
-
-    <p class="lead">
-      Hi! I'm Alan, I study math at Stanford. I'm interested in
-      optimization and its applications to machine learning, control,
-      and financial markets. More broadly, I want to explore the systems and theory that make
-      optimization reliable, robust, and efficient.
-    </p>
-
-    <p class="lead">
-      For the past few months I've been working on a statistical framework for uncertainty quantification
-      for neural networks in Marco Pavone's Autonomous Systems Lab.
-      I've also been building a new Rust canonicalizer backend for CVXPY, an open-source library for convex optimization. Recently, I've been working at <b><a href="https://mecone.trade" data-goatcounter-click="ext-mecone">Mecone Markets</a></b> on 
-      building indices for trading illiquid assets.
-    </p>
-
-    <p class="aside">
-      Feel free to reach out through email!
-    </p>
-
-    <div class="contact">
-      alan [at] stanford [dot] edu
-      <div class="links">
-        <!-- data-goatcounter-click makes each click show up as an event in the analytics dashboard -->
-        <a href="https://github.com/switchpiggy" data-goatcounter-click="ext-github">github</a> /
-        <a href="https://x.com/AlanXiao67" data-goatcounter-click="ext-x">x</a> /
-        <a href="https://www.linkedin.com/in/alan-xiao-08a256243/" data-goatcounter-click="ext-linkedin">linkedin</a> /
-        <a href="https://scholar.google.com/citations?user=o02o3QcAAAAJ&hl=en" data-goatcounter-click="ext-scholar">scholar</a> /
-        <a href="blog.html">writing</a>
-      </div>
-    </div>
-
-    <!-- pixel accent placeholder (replace with your own GIF) -->
     <svg class="pixel" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="var(--accent)">
       <rect x="3" y="0" width="2" height="2"/><rect x="3" y="6" width="2" height="2"/>
       <rect x="0" y="3" width="2" height="2"/><rect x="6" y="3" width="2" height="2"/>
       <rect x="3" y="3" width="2" height="2"/>
     </svg>
-
-    <!-- ===== Research ===== -->
-    <h2 class="label">Currently Working On</h2>
-
-    <div class="entry">
-      <div class="title">Uncertainty Quantification via Empirical Likelihood</div>
-      <div class="meta">w/ Luis Pabon at Stanford Autonomous Systems Lab</div>
-    </div>
-
-    <div class="entry">
-      <div class="title">A Rust Canonicalization Backend for CVXPY</div>
-      <div class="meta">Coming soon ~ 6.3k stars on GitHub, 2.2x speedup</div>
-    </div>
-
-    <!-- ===== Projects & Blogs ===== -->
-    <h2 class="label">Blogs and Notes</h2>
-      <div class="entry">
-        Work in progress!
-      </div>
-    <!-- <ul class="plain">
-      <li><b><a href="#">Empirical Likelihood</a></b></li>
-    </ul> -->
-
-    <!-- ===== Coursework ===== -->
-    <h2 class="label">Class Recs</h2>
-    <ul class="plain">
-      <li><b>MATH 61CM</b> (Undergrad) Real Analysis + Linear Algebra</li>
-      <li><b>MATH 205A/B</b> Real Analysis I/II</li>
-      <li><b>EE 364A/B</b> Convex Optimization I/II</li>
-      <li><b>CS 261</b> Combinatorial Optimization</li>
-      <li><b>CS 265</b> Randomized Algorithms</li>
-      <li><b>STATS 305A</b> Applied Statistics I</li>
-    </ul>
-
-    <hr />
+    <h1>Work in progress</h1>
+    <p>This site is being rebuilt. Check back soon.</p>
   </main>
-
-  <!-- Analytics: GoatCounter. Requires a (free) account registered with the code
-       "switchpiggy" at goatcounter.com — dashboard lives at
-       https://switchpiggy.goatcounter.com -->
-  <script data-goatcounter="https://switchpiggy.goatcounter.com/count"
-          async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

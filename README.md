@@ -4,20 +4,23 @@ Static personal site for Alan Xiao, hosted on GitHub Pages.
 
 **Live:** https://switchpiggy.github.io/
 
-## Files
+## Current state
 
-| File | Purpose |
-| --- | --- |
-| `index.html` | Landing page (intro, work, classes, links) |
-| `blog.html` | Writing index |
-| `post-empirical-likelihood.html` | A blog post |
-| `style.css` | All styling |
+The site is currently a single "work in progress" placeholder (`index.html`,
+self-contained, no stylesheet or analytics). The previous full site is preserved
+in git history and tagged `old-site`.
 
-No build step, no dependencies — just static HTML/CSS.
+### Restoring the old site
+
+```bash
+git checkout old-site -- index.html blog.html post-empirical-likelihood.html style.css README.md
+git commit -m "Restore site"
+git push
+```
 
 ## Editing
 
-### Locally (recommended)
+No build step, no dependencies — just static HTML/CSS.
 
 ```bash
 git add -A
@@ -28,31 +31,12 @@ git push
 Pages redeploys automatically within ~30–60s of each push. To preview before
 committing, just open `index.html` in a browser.
 
-### In the browser (quick tweaks)
-
-On GitHub, open any file → pencil icon → edit → **Commit changes**. It redeploys
-on save, and every change is versioned so you can always roll back.
-
-## Analytics
-
-Every page loads [GoatCounter](https://www.goatcounter.com) (free, no cookies, so
-no consent banner needed). Dashboard: **https://switchpiggy.goatcounter.com** —
-shows pageviews, referrers, countries, and devices. It can't identify individual
-visitors by name; no tool can.
-
-One-time setup: sign up at goatcounter.com and register the code `switchpiggy`
-(it must match the URL in the `<script data-goatcounter=...>` tag at the bottom
-of each page — if that code is taken, pick another and update it in all three
-HTML files).
-
-Outbound links tagged with `data-goatcounter-click="some-name"` (see the contact
-links in `index.html`) report each click as an event on the dashboard. Tag any
-new external link the same way to track its clicks.
-
 ## Notes
 
 - CDN caching means a change can take up to a minute to appear live — hard-refresh
   if you don't see it.
-- All internal links are relative, so nothing breaks on the live domain.
+- GoatCounter analytics (dashboard: https://switchpiggy.goatcounter.com) was on
+  every page of the old site; re-add the `<script data-goatcounter=...>` tag when
+  the full site returns. See the `old-site` tag for the exact snippet.
 - To add a custom domain: repo **Settings → Pages → Custom domain**, then add the
   matching DNS record with your registrar.
